@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Portfolior</title>
+    <link rel="stylesheet" href="index_styles.css">
+    <script src="https://kit.fontawesome.com/05d7d812f8.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="eye.png" alt="">
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" id="fas" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" id="fas" onclick="openmenu()"></i>
+        </nav>
+      </div>
+      <div class="header-text">
+        <p>UI/UX Designer</p>
+        <h1>Hi, I'm <span>Hatshana</span><br> Zubenathi from Pretoria</h1>
+      </div>
+    </div>
+    <!-- -----------------------------------ABOUT-------------------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="pic.jpg" alt="PIC">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Motivated Multimedia Computing student at Tshwane University of Technology (TUT),
+            <br>seeking a Work Integrated Learning (WIL) placement for June/July. Strong foundation
+            <br>in software development, with exposure to mobile app development, web development,
+            <br>database principles, and game development. Ready to apply technical skills to real-world
+            <br>projects and contribute effectively in a team environment.</p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links"onclick="opentab('education')">Education</p>
+            </div>
+            <div class="contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br>Web/App Development</li>
+                <li><span>App Development</span><br>Building Android/iOS Apps</li>
+              </ul>
+            </div>
+            <div class="contents" id="experience">
+              <ul>
+                <li><span>2025 - 2026 Current</span><br>Mobile Development: Android Studio (Kotlin)</li>
+                <li><span>2022 - 2024</span><br>Web Development: HTML, CSS, JavaScript</li>
+                <li><span>2023 - 2026 Current</span><br>Programming Languages: Java, Kotlin, JavaScript, C#, SQL</li>
+              </ul>
+            </div>
+            <div class="contents" id="education">
+              <ul>
+                <li><span>2022</span><br>Tshwane University of Technology (TUT) – Pretoria, Gauteng <br>
+                  Diploma: Multimedia Computing (Computer Science Department) <br>
+                  Status: Currently Studying</li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------SERVICES----------------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i id="icon" class="fa-brands fa-android"></i>
+            <h2>Mobile Development</h2>
+            <p>Develop Android mobile applications using Kotlin in Android Studio, focusing on clean UI design, smooth user experience, and functional app features.</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i id="icon" class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Design and develop responsive, user-friendly websites using HTML for structure, CSS for modern styling, and JavaScript for interactive and dynamic functionality.</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i id="icon" class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>Design intuitive and visually appealing user interfaces, focusing on user experience, usability, and clean layouts to improve interaction and satisfaction.</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------------------PORTFORLIOR---------------------------- -->
+    <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="work-list">
+            <div class="work">
+              <img src="dice.png" alt="IMAGE1">
+              <div class="layer">
+            <h3>Project:1 (Dice Toss game App)</h3>
+            <p>Built a dice toss mobile game using Kotlin and Jetpack Compose, implementing state management, UI updates, and random dice generation logic.</p>
+            <a href="#"><i class="fa-solid fa-dice"></i></a>
+          </div>
+          </div>
+          <div class="work">
+            <img src="website.png" alt="IMAGE2">
+            <div class="layer">
+            <h3>Project:2 (Personal Portfolio Website)</h3>
+          <p>Developed a responsive portfolio website using HTML5, CSS, and JavaScript, featuring smooth navigation, interactive sections, a project display section, and a downloadable CV feature. Designed to work well on both desktop and mobile devices.</p>
+          <a href="#"><i class="fa-brands fa-html5"></i></a>
+          </div>
+          </div>
+          <div class="work">
+            <img src="calc.jpeg" alt="IMAGE3">
+            <div class="layer">
+            <h3>Project:3 Calculator App (Currently in Development)</h3>
+          <p>
+            <b>Tech Stack:</b> Kotlin, Jetpack Compose
+Developed a modern calculator application with a clean UI using Jetpack Compose. Implemented arithmetic operations, separated UI and logic layers, and added Navigation to support multiple screens including history tracking.
+
+          </p>
+          <a href="#"><i class="fa-solid fa-calculator"></i></a>
+          </div>
+          </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+    </div>
+    <!-- ----------------------------CONTACTS---------------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i id="icons" class="fa-solid fa-envelope"></i></i>zubenathistar105@gmail.com</p>
+            <p><i id="icons" class="fa-solid fa-phone"></i>0791910967</p>
+            <div class="social-icons">
+              <a href="https://wa.me/qr/YZJGDW4EXSILO1"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="https://github.com/zubenathi-hatshana"><i class="fa-brands fa-github"></i></a>
+              <a href="https://linkedin.com/in/zubenathi-hatshana"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <a href="hatshana-Zubenathi-CV.pdf" download class="btn btn2">Download CV</a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+            <p>&copy; Copyright Z.Hatshana . All rights reserved.</p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("contents");
+
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
